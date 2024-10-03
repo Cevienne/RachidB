@@ -52,23 +52,13 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a class="active" href="index.html">Home</a></li>
-                                            <li><a href="about.html">Über mich</a></li>
-                                            <li><a href="track.html">Lieder</a></li>
-                                            <li><a href="track.html">Konzerte</a></li>
-                                            <li><a href="#">Alben<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">Album 1</a></li>
-                                                    <li><a href="single-blog.html">Album 2</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#">Neuigkeiten<i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Kontakt</a></li>
+                                            <li><a href="#section0">Home</a></li>
+                                            <li><a href="#section1">Über mich</a></li>
+                                            <li><a href="#section2">Lieder</a></li>
+                                            <li><a href="#section3">Konzerte</a></li>
+                                            <li><a href="#section4">Bilder</a></li>
+                                            <li><a href="#section4">Instagram</a></li>
+                                            <li><a href="#section7">Kontakt</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -90,9 +80,24 @@
             </div>
         </div>
     </header>
+
+    <script>
+        // JavaScript für Auto-Scroll
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
     <!-- header-end -->
 
     <!-- slider_area_start -->
+    <section id="section0">
     <div class="slider_area">
         <div class="single_slider  d-flex align-items-center slider_bg_1 overlay2">
             <div class="container">
@@ -106,6 +111,7 @@
             </div>
         </div>
     </div>
+    </section>
     <!-- slider_area_end -->
 
     <!-- music_area  -->
@@ -140,6 +146,7 @@
     <!-- music_area end  -->
 
     <!-- about_area  -->
+    <section id="section1">
     <div class="about_area">
         <div class="container">
             <div class="row align-items-center">
@@ -153,22 +160,29 @@
                         <h3>Rachid Benachour</h3>
                         <p>
                             Musik, die einen an besondere Orte trägt. Musik zum Ankommen.
-
-Ein Ruf durchbricht die Stille. Ein Felsmassiv durchzogen von Schluchten. Auf dem Berggipfel sitzt Rachid und wartet auf die Antwort. Sie kommt. Musikalisch. Rachid erzählt aus seiner Heimat, Algerien. Die Zeit hält an. Afrika ist zum Berühren nah und das Publikum taucht tief in die Geschichte ein.<br><br>
-
-Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner berberischen Herkunft. Seine Melodien sind eine Brücke zwischen den Kulturen, die die Vielfalt und den Reichtum seiner Traditionen zum Leben erwecken. Durch seine Musik wird die Vergangenheit lebendig und die Gegenwart greifbar. Die Rhythmen und Klänge entführen die Zuhörer in die weiten Landschaften Nordafrikas, wo die Geschichten der Berber von Generation zu Generation weitergetragen werden.
+                            Ein Ruf durchbricht die Stille. Ein Felsmassiv durchzogen von Schluchten. 
+                            Auf dem Berggipfel sitzt Rachid und wartet auf die Antwort. Sie kommt. Musikalisch. 
+                            Rachid erzählt aus seiner Heimat, Algerien. Die Zeit hält an. Afrika ist zum Berühren 
+                            nah und das Publikum taucht tief in die Geschichte ein.
+                            <br><br>
+                            Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner 
+                            berberischen Herkunft. Seine Melodien sind eine Brücke zwischen den Kulturen, 
+                            die die Vielfalt und den Reichtum seiner Traditionen zum Leben erwecken. 
+                            Durch seine Musik wird die Vergangenheit lebendig und die Gegenwart greifbar. 
+                            Die Rhythmen und Klänge entführen die Zuhörer in die weiten Landschaften Nordafrikas, 
+                            wo die Geschichten der Berber von Generation zu Generation weitergetragen werden.
                         </p>
-                        <div class="signature">
-                            <img src="img/about/signature.png" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    </section>
     <!--/ about_area  -->
 
-    <!-- youtube_video_area  -->
+    
+    <!--
+  youtube_video_area  
     <div class="youtube_video_area">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
@@ -251,78 +265,71 @@ Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner b
             </div>
         </div>
     </div>
-    <!-- / youtube_video_area  -->
+     youtube_video_area 
+--> 
 
     <!-- music_area  -->
+    <section id="section2">
     <div class="music_area music_gallery">
         <div class="container">
                 <div class="row">
                         <div class="col-xl-12">
                             <div class="section_title text-center mb-65">
-                                <h3>Latest Tracks</h3>
+                                <h3>Hörprobe in meine Alben</h3>
                             </div>
                         </div>
                     </div>
             <div class="row align-items-center justify-content-center mb-20">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
+                                <div class="col-xl-12 col-md-12">
                                     <div class="music_field">
                                             <div class="thumb">
                                                     <img src="img/music_man/1.png" alt="">
                                                 </div>
                                                 <div class="audio_name">
                                                     <div class="name">
-                                                        <h4>Frando Kally</h4>
-                                                        <p>10 November, 2019</p>
+                                                        <h4>Esperanto</h4>
+                                                        <p>1. Album, Sirius, 2005</p>
                                                     </div>
                                                         <audio preload="auto" controls>
-                                                                <source src="https://www.w3schools.com/html/horse.mp3">
+                                                                <source src="audio/sirius-esperanto-demo.mp3">
                                                             </audio>
                                                 </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                            <a href="#" class="boxed-btn">buy albam</a>
                                     </div>
                                 </div>
                     </div>
                 </div>
 
             </div>
-            <div class="row align-items-center justify-content-center mb-20">
+            <div class="row align-items-center justify-content-center">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
+                                <div class="col-xl-12 col-md-12">
                                     <div class="music_field">
                                             <div class="thumb">
                                                     <img src="img/music_man/2.png" alt="">
                                                 </div>
                                                 <div class="audio_name">
                                                     <div class="name">
-                                                        <h4>Frando Kally</h4>
-                                                        <p>10 November, 2019</p>
+                                                        <h4>Bourourou</h4>
+                                                        <p>2. Album, Sirius, 2010</p>
                                                     </div>
                                                         <audio preload="auto" controls>
-                                                                <source src="https://www.w3schools.com/html/horse.mp3">
+                                                                <source src="audio/sirius-bourourou-demo.mp3">
                                                             </audio>
                                                 </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                            <a href="#" class="boxed-btn">buy albam</a>
                                     </div>
                                 </div>
                     </div>
                 </div>
 
             </div>
+            <!--
             <div class="row align-items-center justify-content-center mb-20">
                 <div class="col-xl-10">
                     <div class="row align-items-center">
-                                <div class="col-xl-9 col-md-9">
+                                <div class="col-xl-12 col-md-12">
                                     <div class="music_field">
                                             <div class="thumb">
                                                     <img src="img/music_man/3.png" alt="">
@@ -338,55 +345,38 @@ Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner b
                                                 </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-md-3">
-                                    <div class="music_btn">
-                                            <a href="#" class="boxed-btn">buy albam</a>
-                                    </div>
-                                </div>
                     </div>
                 </div>
 
-            </div>
+            </div> -->
         </div>
     </div>
+    </section>
     <!-- music_area end  -->
 
      <!-- konzerte start  -->
-     <div class="container mt-5">
+     <section id="section3">
+     <div class="container mt-200">
         <h1 class="text-center mb-5 ">Meine nächsten Konzerte und Auftritte</h1>
         <div class="event-container fade-in-on-scroll">
           <div class="row">
-            <div class="col-md-3"><strong>01.08.2024</strong></div>
-            <div class="col-md-3">Open Air</div>
-            <div class="col-md-6">Berlin, Deutschland</div>
+            <div class="col-md-3"><strong>12.10.2024</strong></div>
+            <div class="col-md-3">XXXXX</div>
+            <div class="col-md-6">Wein</div>
           </div>
         </div>
         <div class="event-container fade-in-on-scroll">
           <div class="row">
-            <div class="col-md-3"><strong>15.08.2024</strong></div>
-            <div class="col-md-3">Festival</div>
-            <div class="col-md-6">Paris, Frankreich</div>
+            <div class="col-md-3"><strong>18.10.2024</strong></div>
+            <div class="col-md-3">Frauenforum</div>
+            <div class="col-md-6">VHS, Ulm</div>
           </div>
         </div>
         <div class="event-container fade-in-on-scroll">
           <div class="row">
-            <div class="col-md-3"><strong>29.08.2024</strong></div>
-            <div class="col-md-3">Club-Konzert</div>
-            <div class="col-md-6">Madrid, Spanien</div>
-          </div>
-        </div>
-        <div class="event-container fade-in-on-scroll">
-          <div class="row">
-            <div class="col-md-3"><strong>12.09.2024</strong></div>
-            <div class="col-md-3">Benefizkonzert</div>
-            <div class="col-md-6">Rom, Italien</div>
-          </div>
-        </div>
-        <div class="event-container fade-in-on-scroll">
-          <div class="row">
-            <div class="col-md-3"><strong>26.09.2024</strong></div>
-            <div class="col-md-3">Akustik-Konzert</div>
-            <div class="col-md-6">Amsterdam, Niederlande</div>
+            <div class="col-md-3"><strong>30.12.2024</strong></div>
+            <div class="col-md-3">Auftritt mit Sirius</div>
+            <div class="col-md-6">Cafée Nix, Blaubeuren</div>
           </div>
         </div>
       </div>
@@ -404,16 +394,17 @@ Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner b
           });
         });
       </script>
-
+     </section>
     <!-- konzerte end  -->
 
     <!-- gallery -->
+    <section id="section4">
     <div class="gallery_area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-65">
-                        <h3>Image Galleries</h3>
+                        <h3>Einblicke in meine Auftritte</h3>
                     </div>
                 </div>
             </div>
@@ -481,9 +472,11 @@ Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner b
                 </div>
         </div>
     </div>
+    </section>
     <!--/ gallery -->
 
     <!-- contact_rsvp -->
+    <section id="section7">
     <div class="contact_rsvp">
         <div class="container">
             <div class="row">
@@ -495,16 +488,17 @@ Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner b
             </div>
         </div>
     </div>
+</section>
     <!--/ contact_rsvp -->
 
     <!-- footer start -->
     <footer class="footer">
         <div class="footer_top">
             <div class="container">
-                <div class="row ml-5">
+                <div class="row ml-5 contact-container">
                     
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-xl-12">
                           <h2 class="contact-title">Kontaktiere mich</h2>
                         </div>
                         <div class="col-lg-12">
@@ -547,21 +541,22 @@ Rachid ist ein Meister der Weltmusik, inspiriert von den tiefen Wurzeln seiner b
             <div class="container">
                 <div class="footer_border"></div>
                 <div class="row">
-                    <div class="col-xl-7 col-md-6">
+                    <div class="col-xl-6 col-md-7">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
-                    <div class="col-xl-5 col-md-6">
+                    <div class="col-xl-6 col-md-7">
                         <div class="footer_links">
                             <ul>
-                                <li><a href="#">home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">tracks</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">contact</a></li>
+                                <li><a class="active" href="index.html">Home</a></li>
+                                <li><a href="#section1">Über mich</a></li>
+                                <li><a href="#section2">Lieder</a></li>
+                                <li><a href="#section3">Konzerte</a></li>
+                                <li><a href="#section4">Bilder</a></li>
+                                <li><a href="#section7">Kontakt</a></li>
                             </ul>
                         </div>
                     </div>
