@@ -361,22 +361,36 @@
         <div class="event-container fade-in-on-scroll">
           <div class="row">
             <div class="col-md-3"><strong>12.10.2024</strong></div>
-            <div class="col-md-3">XXXXX</div>
-            <div class="col-md-6">Wein</div>
+            <div class="col-md-4">Sirius (Gruppe) - Schäfers Kulturstadel</div>
+            <div class="col-md-5">Wain</div>
           </div>
         </div>
         <div class="event-container fade-in-on-scroll">
           <div class="row">
             <div class="col-md-3"><strong>18.10.2024</strong></div>
-            <div class="col-md-3">Frauenforum</div>
-            <div class="col-md-6">VHS, Ulm</div>
+            <div class="col-md-4">Frauenforum</div>
+            <div class="col-md-5">Volkshochschule (VHS), Ulm</div>
           </div>
         </div>
         <div class="event-container fade-in-on-scroll">
+            <div class="row">
+              <div class="col-md-3"><strong>16.11.2024</strong></div>
+              <div class="col-md-4">Yoga Workshop (musikalische Begleitung)</div>
+              <div class="col-md-5">Das Bienenhaus, Burgau</div>
+            </div>
+          </div>
+          <div class="event-container fade-in-on-scroll">
+            <div class="row">
+              <div class="col-md-3"><strong>07.12.2024</strong></div>
+              <div class="col-md-4">Mantra Yin Yoga & Konzert</div>
+              <div class="col-md-5">Seminarraum, Temmenhausen</div>
+            </div>
+          </div>  
+        <div class="event-container fade-in-on-scroll">
           <div class="row">
             <div class="col-md-3"><strong>30.12.2024</strong></div>
-            <div class="col-md-3">Auftritt mit Sirius</div>
-            <div class="col-md-6">Cafée Nix, Blaubeuren</div>
+            <div class="col-md-4">Auftritt mit Sirius</div>
+            <div class="col-md-5">Cafée Nix, Blaubeuren</div>
           </div>
         </div>
       </div>
@@ -524,34 +538,33 @@
                           <h2 class="contact-title">Kontaktiere mich</h2>
                         </div>
                         <div class="col-lg-12">
-                          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="row">
-                              <div class="col-12">
-                                <div class="form-group">
-                                  
-                                    <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'" placeholder = 'Deine Nachricht'></textarea>
+                            <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control w-100" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Nachricht'" placeholder='Deine Nachricht' autocomplete="off"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dein Name'" placeholder='Dein Name' required autocomplete="name">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine E-Mail Adresse'" placeholder='Deine E-Mail Adresse' required autocomplete="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Deine Veranstaltung'" placeholder='Um welche Art der Veranstaltung handelt es sich?' required autocomplete="off">
+                                        </div>
+                                    </div>
                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                <div class="form-group">
-                                  <input class="form-control" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Dein Name'>
+                                <div class="form-group mt-3">
+                                    <button type="submit" class="button button-contactForm btn_4 boxed-btn">Anfrage senden</button>
                                 </div>
-                              </div>
-                              <div class="col-sm-6">
-                                <div class="form-group">
-                                  <input class="form-control" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" placeholder = 'Deine E-Mail Adresse'>
-                                </div>
-                              </div>
-                              <div class="col-12">
-                                <div class="form-group">
-                                  <input class="form-control" name="subject" id="subject" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'" placeholder = 'Um welche Art der Veranstaltung handelt es sich?'>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-group mt-3">
-                              <button type="submit" class="button button-contactForm btn_4 boxed-btn">Anfrage senden</button>
-                            </div>
-                          </form>
+                            </form>
                         </div>
                         
                       </div>
@@ -563,14 +576,14 @@
             <div class="container">
                 <div class="footer_border"></div>
                 <div class="row">
-                    <div class="col-xl-6 col-md-7">
+                    <div class="col-xl-5 col-md-6">
                         <p class="copy_right">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         </p>
                     </div>
-                    <div class="col-xl-6 col-md-7">
+                    <div class="col-xl-7 col-md-6">
                         <div class="footer_links">
                             <ul>
                                 <li><a class="active" href="index.html">Home</a></li>
@@ -579,6 +592,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <li><a href="#section3">Konzerte</a></li>
                                 <li><a href="#section4">Bilder</a></li>
                                 <li><a href="#section7">Kontakt</a></li>
+                                <li><a href="impressum.html">Impressum</a></li>
+                                <li><a href="datenschutz.html">Datenschutz</a></li>
                             </ul>
                         </div>
                     </div>

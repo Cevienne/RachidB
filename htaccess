@@ -1,0 +1,31 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} !^www.rachidb.de$ [NC]
+RewriteRule ^(.*)$ https://www.rachidb.de/$1 [L,R=301]
+
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://www.rachidb.de/$1 [R=301,L]
+
+</IfModule>
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
